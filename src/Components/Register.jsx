@@ -1,9 +1,11 @@
 import React from 'react'
+import TextField from '@mui/material/TextField';
 
 function Register() {
   return (
-    <div>
-      <h1>Regiter</h1>
+    <div className='container text-center'>
+        <h1>Register</h1>
+        <TextField id="outlined-basic" label="Outlined" variant="outlined" />
     </div>
   )
 }
