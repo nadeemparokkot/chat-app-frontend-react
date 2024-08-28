@@ -3,10 +3,12 @@ import Register from "./Components/Register";
 
 function App() {
   return (
-    <>
-        <Register/>
-        <Login/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/login' element={<Login />}></Route>
+        <Route path='/register' element={<Register />}></Route>
+      </Routes>
+    </BrowserRouter>
 
   );
 }
