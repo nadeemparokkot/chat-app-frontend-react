@@ -2,14 +2,17 @@ import ChatArea from "./Components/ChatArea";
 import Login from "./Components/Login";
 import Navigate from "./Components/Navigate";
 import Register from "./Components/Register";
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Sidebar from "./Components/Sidebar";
+import "./App.css"
 
 function App() {
   return (
     <>
-        <ChatArea/>
-        <Sidebar/>
+      <div className="chat-container">
+        <Sidebar />
+        <ChatArea />
+      </div>
     </>
 
     // <BrowserRouter>
